@@ -1,0 +1,247 @@
+/* =========================
+   General Reset & Body
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* =========================
+   Landing Page
+========================= */
+.landing-page .container {
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.title:hover {
+  color: #ffce00;
+  transform: scale(1.05);
+}
+
+.start-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #cd1030, #20dc08);
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.start-btn:hover {
+  background: linear-gradient(45deg, #07dcc7, #c10d85);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   Concepts Page
+========================= */
+.concepts-page {
+  flex-direction: column;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.concepts-page header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  color: #ffce00;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.concept-card {
+  background: #f1faee;
+  color: #1d3557;
+  padding: 35px 20px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.concept-card:hover {
+  background: #a8dadc;
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   Concept Detail Page
+========================= */
+.concept-detail {
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.concept-detail main p {
+  margin: 25px 0 35px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.back-btn {
+  color: #fff;
+  background: linear-gradient(45deg, #e63946, #d62828);
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: linear-gradient(45deg, #d62828, #e63946);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   Quiz Score Section
+========================= */
+.score-container {
+  text-align: center;
+  background: linear-gradient(145deg, #1b1f3b, #2a2e5b);
+  color: #fff;
+  padding: 60px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  width: 85%;
+  max-width: 550px;
+  margin: 120px auto;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.score-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffce00;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.score-container p {
+  font-size: 1.35rem;
+  margin-bottom: 45px;
+  color: #e0e0e0;
+}
+
+/* =========================
+   Quiz Container & Buttons
+========================= */
+#quiz-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background: #1b1f3b;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.quiz-question {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffce00;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 16px 24px;
+  background: #457b9d;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.option-btn:hover {
+  background: #1d3557;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.option-btn:disabled {
+  background: #a8dadc;
+  color: #333;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.retake-btn {
+  background: linear-gradient(45deg, #ffce00, #ffc107);
+  color: #1b1f3b;
+  font-weight: 700;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.retake-btn:hover {
+  background: linear-gradient(45deg, #ffc107, #ffce00);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+}
+
+/* =========================
+   Animations
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
